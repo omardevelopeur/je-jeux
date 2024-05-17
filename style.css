@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+    background-color: aqua;
+    font-size: 30px;
+    width: fit-content;
+}
+div.parent{
+    margin-left: 50%;
+    padding: 0;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px ;
+}
+div.parent div{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    font-size: 30px;
+    background-color: chartreuse;
+}
+div[class^="q1"]{
+    display: none;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+div[class^="q1"] .container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 20px;
+}
+div[class^="q1"] .container div[class^="p1"]{
+display: grid;
+grid-column: 1/3;
+justify-content: center;
+background-color: darkgrey;
+font-size: 30px;
+}
+div[class^="q1"] .container div[class^="pr1"]{
+    display: grid;
+    grid-column: 1/3;
+    gap: 20px 20px;
+    grid-template-columns:repeat(3,1fr) ;
+}
+div[class^="q1"] .container div[class^="pr1"] div{
+    font-size: 24px;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(220, 30, 10);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+div[class^="in1"]{
+    display: none;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+div[class^="in1"] div{
+    display: grid;
+    grid-template-columns: 100px;
+    gap: 10px;
+    justify-content: center;
+}
+div[class^="in1"] div input{
+    position: relative;
+    width: 90%;
+    text-align: center;
+}
+button{
+    display: none;
+}
+button.but{
+    display: block;
+}
+
+
+
